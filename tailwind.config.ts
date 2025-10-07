@@ -36,12 +36,10 @@ const configs: Config = {
         h6: "1.25rem",
         h7: "2.25rem",
         h8: "0.875rem",
-        h9: "4rem", 
+        h9: "4rem",
         h10: "2.5rem",
-        h11: "3rem", 
+        h11: "3rem",
         h12: "0.5rem",
-      
-        
       },
     },
   },
