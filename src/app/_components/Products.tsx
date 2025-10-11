@@ -6,22 +6,7 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Category = [
-  {
-    name: "Fruits & Vegetables",
-    image: "/images/fruitsandveg.jpg",
-  },
-  {
-    name: "Pulses & Seeds",
-    image: "/images/pulsesandseeds.jpg",
-  },
-  {
-    name: "Diary & Eggs",
-    image: "/images/dairyandeggs.jpg",
-  },
-  {
-    name: "Fish & Meat",
-    image: "/images/fish.jpg",
-  },
+ 
   {
     name: "Rice & Flours",
     image: "/images/riceflours.jpg",
@@ -30,6 +15,19 @@ const Category = [
     name: "Direct Powders",
     image: "/images/powders.jpg",
   },
+   {
+    name: "Grains & Pulses",
+    image: "/images/grains.jpg",
+  },
+  {
+    name: "Essence of Elegance",
+    image: "/images/perfumes.jpg",
+  },
+  {
+    name: "Dry Fruits & Nuts",
+    image: "/images/dryfruits.jpg",
+  },
+  
 ];
 
 function Products() {
@@ -48,7 +46,7 @@ function Products() {
   }, []);
 
   return (
-    <div className="~px-[1rem]/[6.875rem] ~py-[1.5rem]/[3.5rem]  bg-green-50 ">
+    <div className="~px-[1rem]/[6.875rem] ~py-[1.5rem]/[3.5rem]  bg-[#FFEDE2] ">
       <div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

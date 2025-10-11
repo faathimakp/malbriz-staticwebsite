@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Variants, motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Logo from "@public/images/herobg.jpg";
+import Logo from "@public/images/banner.webp";
 
 function Hero() {
   const titles = [

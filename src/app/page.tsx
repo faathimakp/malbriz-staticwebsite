@@ -5,6 +5,7 @@ import WhyChooseUs from "./_components/WhyChooseUs";
 import ContactUs from "./_components/ContactUs";
 import Products from "./_components/Products";
 // import Shopping from "./_components/Shopping";
+import Export from "./_components/Export";
 
 const page = () => {
   return (
@@ -14,6 +15,7 @@ const page = () => {
       {/* <Shopping /> */}
       <Products />
       <WhyChooseUs />
+      <Export/>
       <ContactUs />
     </>
   );

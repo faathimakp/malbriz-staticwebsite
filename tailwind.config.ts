@@ -20,6 +20,15 @@ const configs: Config = {
       colors: {
        
       },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 30s linear infinite',
+      },
       fontFamily: {
         ppMoriReqular: "var(--font-pp-mori-regular)",
         ppMoriSemibold: "var(--font-pp-mori-semibold)",
