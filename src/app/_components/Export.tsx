@@ -42,7 +42,7 @@ const Export = () => {
 
   return (
     <>
-      <div className="~px-[1.5rem]/[6rem] ~pt-[2rem]/[3.5rem]">
+      <div className="~px-[1.5rem]/[6rem] ~pt-[2rem]/[2rem]">
         <div className="text-start mb-12 ">
           <h2 className="~text-h2/h7 ~leading-[1.75rem]/[2.5rem] font-bold text-[#0B2A67] mb-4">
             Expanding Beyond Borders

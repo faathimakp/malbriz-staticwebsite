@@ -94,7 +94,7 @@ const WhyChooseUs = () => {
             alt="Why Choose Us - Malbriz Ventures"
             width={1200}
             height={600}
-            className="rounded-xl shadow-xl w-full object-cover"
+            className="rounded-xl shadow-xl w-full  h-[55dvh] md:h-[70dvh] object-cover"
           />
         </div>
       </div>

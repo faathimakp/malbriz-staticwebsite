@@ -26,14 +26,14 @@ const MenuRes = ({ setIsOpen }: Props) => {
               </Link>
             </div>
             <div className="flex justify-between">
-              <Link href={"/"} onClick={() => setIsOpen(false)}>
+              <Link href={"/about"} onClick={() => setIsOpen(false)}>
                 <p className="font-medium text-h6 leading-[1.8rem] text-greenmedium pb-[1.5rem]">
                   ABOUT
                 </p>
               </Link>
             </div>
             <div className="flex justify-between">
-              <Link href={"/"} onClick={() => setIsOpen(false)}>
+              <Link href={"/contact"} onClick={() => setIsOpen(false)}>
                 <p className="font-medium text-h6 leading-[1.8rem] text-greenmedium pb-[1.5rem]">
                   CONTACT
                 </p>

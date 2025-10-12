@@ -51,7 +51,7 @@ function Hero() {
   const words = titles[currentIndex].split(" ");
 
   return (
-    <div className="relative  h-screen flex justify-center  ">
+    <div className="relative  h-[55dvh] md:h-[80dvh] flex justify-center  ">
       <div className=" w-full relative  ">
         
         <Image
