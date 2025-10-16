@@ -72,7 +72,7 @@ const Header = () => {
           );
         })}
         <div>
-          <Link href="#getintouch" className="bg-[#fca312] hover:bg-[#d5942d] text-black font-semibold text-h3 rounded-[1rem] px-[1.5rem] py-[0.5rem] shadow-md transition">
+          <Link href="/contact#getintouch" className="bg-[#fca312] hover:bg-[#d5942d] text-black font-semibold text-h3 rounded-[1rem] px-[1.5rem] py-[0.5rem] shadow-md transition">
             Get In Touch
           </Link>
         </div>
