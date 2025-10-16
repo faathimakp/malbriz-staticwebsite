@@ -28,7 +28,7 @@ const Header = () => {
           <Image
             src={Logo}
             alt="Skedara Logo"
-            className="~w-[9rem]/[14.375rem]  object-cover"
+            className="~w-[9rem]/[12.375rem]  object-cover"
           />
         </div>
       </Link>
@@ -72,9 +72,9 @@ const Header = () => {
           );
         })}
         <div>
-          <button className="bg-[#fca312] hover:bg-[#d5942d] text-black font-semibold text-h3 rounded-[1rem] px-[1.5rem] py-[0.5rem] shadow-md transition">
+          <Link href="#getintouch" className="bg-[#fca312] hover:bg-[#d5942d] text-black font-semibold text-h3 rounded-[1rem] px-[1.5rem] py-[0.5rem] shadow-md transition">
             Get In Touch
-          </button>
+          </Link>
         </div>
       </nav>
     </header>

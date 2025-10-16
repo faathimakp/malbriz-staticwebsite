@@ -5,8 +5,12 @@ import AboutBg from "@public/images/contact.jpg";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import Whatsapp from "@public/images/whatsapp.svg";
+import Facebook from "@public/svg/facebook.svg";
+import Instagram from "@public/svg/instagram.svg";
 
 import WordStaggerAnimation from "@/app/components/animations/WordStaggerAnimation";
+import Link from "next/link";
 
 const Hero = () => {
   const mySchema = z.object({
@@ -70,8 +74,8 @@ const Hero = () => {
           className="absolute  text-white font-bold ~text-[1.375rem]/[3.5rem] font-poppins ~leading-[1.5rem]/[3.5rem]"
         ></WordStaggerAnimation>
       </div>
-      <div className="max-w-3xl mx-auto ~py-[3rem]/[5rem] px-4">
-        {/* Header */}
+      <div className="max-w-3xl mx-auto ~py-[3rem]/[5rem] px-4" id="getintouch">
+       
         <div className="text-center mb-10">
           <p className="text-sm text-[#F4A300] font-semibold tracking-widest uppercase mb-2">
             Let’s Get In Touch
@@ -85,7 +89,7 @@ const Hero = () => {
           </p>
         </div>
 
-        {/* Form */}
+       
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col">
@@ -153,11 +157,43 @@ const Hero = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="bg-[#0B2A67] text-white font-semibold px-6 py-3 rounded-md transition duration-200"
+            className="bg-[#0B2A67] text-white text-h3  font-medium ~px-[1rem]/[1.5rem] py-[0.75rem] rounded-md transition duration-200"
           >
             SEND A MESSAGE
           </button>
         </form>
+
+       
+<div className="~mt-[2.5rem]/[4rem] text-center">
+  <div className="flex justify-center flex-wrap ~gap-[0.75rem]/[1.25rem]">
+    <Link
+      href="https://www.instagram.com/malbrizventuresltd/?igsh=MTd5OGh3aWJnY2ZyYg%3D%3D#"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-[#0B2A67] border border-gray-300 shadow-md hover:bg-pink-600 hover:text-white transition duration-300 rounded-full p-3 md:p-4 text-xl w-12 h-12 md:w-14 md:h-14 flex items-center justify-center"
+    >
+      <Image src={Instagram} alt="Instagram" width={20} height={20} className="~size-[1.25rem]/[1.5rem] " />
+    </Link>
+
+    <a
+      href="https://www.facebook.com/people/Malbriz-Ventures-Ltd/61565047468684/?mibextid=wwXIfr&rdid=n3igudwwkaDub3tv&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16L2UioDJJ%2F%3Fmibextid%3DwwXIfr"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-[#0B2A67] border border-gray-300 shadow-md hover:bg-blue-600 hover:text-white transition duration-300 rounded-full p-3 md:p-4 text-xl w-12 h-12 md:w-14 md:h-14 flex items-center justify-center"
+    >
+      <Image src={Facebook} alt="Facebook" width={20} height={20} className="~size-[1.25rem]/[1.5rem]" />
+    </a>
+
+    <a
+      href="https://wa.me/+35699936017"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-[#0B2A67] border border-gray-300 shadow-md hover:bg-green-600 hover:text-white transition duration-300 rounded-full p-3 md:p-4 text-xl w-12 h-12 md:w-14 md:h-14 flex items-center justify-center"
+    >
+      <Image src={Whatsapp} alt="WhatsApp" width={20} height={20} className="~size-[1.25rem]/[1.5rem]" />
+    </a>
+  </div>
+</div>
       </div>
     </section>
   );

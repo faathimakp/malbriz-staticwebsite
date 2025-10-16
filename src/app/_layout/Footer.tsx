@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "@public/images/Malbriz Logo File/Malbriz Ventures Logo-white text.png";
-import Linkedin from "@public/svg/linkdin.svg";
-import Twitter from "@public/svg/twitter.svg";
+import Whatsapp from "@public/images/whatsapp.svg";
 import Facebook from "@public/svg/facebook.svg";
 import Instagram from "@public/svg/instagram.svg";
 import Link from "next/link";
@@ -14,7 +13,7 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-end">
           <div className="md:flex-row flex flex-col-reverse md:justify-between mb-[2rem] w-full">
             <p className="text-white  ~text-h3/h2 ~leading-[1.5rem]/[2.5rem]">
-              +971 042585144 <br />
+              +35699936017 <br />
               feedback@malbriz.com
             </p>
             <div className="relative ~w-[11.5rem]/[14.375rem]  h-auto pb-[1.5625rem]">
@@ -37,34 +36,26 @@ const Footer = () => {
             <a href={"/contact"} className="hover:text-[#0CBA4C]">
               Contact
             </a>
-           
           </div>
 
           <div className="flex items-center gap-6 mt-[1rem]">
-            <a href="#">
-              <Image
-                src={Linkedin}
-                alt="LinkedIn"
-                className="size-[1.125rem]"
-              />
-            </a>
-            <a href="#">
-              <Image src={Twitter} alt="Twitter" className="size-[1.125rem]" />
-            </a>
-            <a href="#">
+            <Link href="https://www.facebook.com/people/Malbriz-Ventures-Ltd/61565047468684/?mibextid=wwXIfr&rdid=n3igudwwkaDub3tv&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16L2UioDJJ%2F%3Fmibextid%3DwwXIfr">
               <Image
                 src={Facebook}
                 alt="Facebook"
                 className="size-[1.125rem]"
               />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="https://www.instagram.com/malbrizventuresltd/?igsh=MTd5OGh3aWJnY2ZyYg%3D%3D#">
               <Image
                 src={Instagram}
                 alt="Instagram"
                 className="size-[1.125rem]"
               />
-            </a>
+            </Link>
+            <Link href="https://wa.me/+35699936017">
+              <Image src={Whatsapp} alt="Twitter" className="size-[1.125rem]" />
+            </Link>
           </div>
         </div>
       </div>
