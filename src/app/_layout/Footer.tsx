@@ -20,10 +20,6 @@ const Footer = () => {
               <Image src={Logo} alt="Skedara" className="fill object-cover" />
             </div>
           </div>
-          {/* <p className="max-w-[400px] text-[#D4D0CC] md:block hidden text-[1.125rem] leading-[1.6875rem]">
-            Rose Flower General Trading L.L.C Corp. <br /> Ofﬁce Al Qusais. Ind. Area
-            3, Dubai, UAE
-          </p> */}
 
           <div className="flex flex-wrap justify-between md:justify-center ~gap-x-[0.5rem]/[2.5rem] text-[1rem] text-[#FAFAFA] ~leading-[2rem]/[3rem] font-medium uppercase mb-[1rem] border-b border-[#FAFAFA]/30 ~pb-[0.75rem]/[1.5rem] w-full md:w-fit">
             <a href={"/"} className="hover:text-[#0CBA4C]">
