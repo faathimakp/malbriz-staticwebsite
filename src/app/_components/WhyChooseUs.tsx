@@ -54,16 +54,16 @@ const Cards = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-white ~py-[2rem]/[3rem]">
-      <div className="container mx-auto px-[1.25rem]">
+    <section className="bg-white ~py-[2rem]/[6rem]">
+      <div className="container mx-auto px-[1.5rem]">
         <div className="text-center ~pb-[2rem]/[3rem]">
-          <p className="~text-h2/h7 ~leading-[1.75rem]/[2.5rem] font-bold text-[#fca312] mb-[1rem]">
+          <p className="~text-h2/h7 ~leading-[1.75rem]/[2.5rem] font-serif font-bold text-[#fca312] mb-[1rem]">
             Why Choose <span className="text-[#14213d]">Malbriz Ventures</span>?
           </p>
 
           <TextStaggerAnimation
             text="  At Malbriz Ventures, we go beyond just offering groceries — we bring quality, value, and care to your daily shopping."
-            className="~text-h3/h2 ~leading-[1rem]/[2rem] text-[#14213d] max-w-3xl mx-auto text-center"
+            className="~text-h3/h4  font-serif ~leading-[1.45rem]/[1.75rem] text-[#14213d] max-w-3xl mx-auto text-center"
           />
         </div>
 
@@ -78,10 +78,10 @@ const WhyChooseUs = () => {
               >
                 <div className="absolute inset-0  rounded-xl z-0" />
                 <div className="relative z-10">
-                  <p className="text-h6 leading-[1.75rem] font-semibold text-[#0B2A67] pb-[0.75rem]">
+                  <p className="text-h6 font-serif leading-[1.75rem] font-semibold text-[#0B2A67] pb-[0.75rem]">
                     {feature.title}
                   </p>
-                  <p className="text-gray-700 text-sm">{feature.description}</p>
+                  <p className="text-gray-700 text-sm font-serif">{feature.description}</p>
                 </div>
               </div>
             </CardAnimation>
@@ -99,9 +99,9 @@ const WhyChooseUs = () => {
         </div>
       </div>
       <div className="bg-[#f9f9f9] ~py-[3rem]/[5.5rem]">
-        <div className="container mx-auto px-[1.25rem]">
+        <div className="container mx-auto px-[1.5rem]">
           <div className="text-center ~mb-[2.5rem]/[4rem]">
-            <p className="~text-h2/h7 ~leading-[1.75rem]/[2rem] font-semibold  text-[#fca312] mb-[1rem]">
+            <p className="~text-h2/h7 font-serif ~leading-[1.75rem]/[2rem] font-semibold  text-[#fca312] mb-[1rem]">
               Our Global Reach
             </p>
 
@@ -109,7 +109,7 @@ const WhyChooseUs = () => {
               text=" Malbriz Ventures is not just your local grocery provider — we are
               an international importer and exporter of high-quality products
               across borders."
-              className="~text-h3/h2 ~leading-[1rem]/[2rem] text-[#14213d] ~max-w-3xl/4xl mx-auto text-center"
+              className="~text-h3/h4  font-serif ~leading-[1.45rem]/[1.75rem]  text-[#14213d] ~max-w-3xl/4xl mx-auto text-center"
             />
           </div>
 
@@ -118,7 +118,7 @@ const WhyChooseUs = () => {
               <CardAnimation key={index} index={index} delay={0.2}>
                 <div
                   key={index}
-                  className="bg-white rounded-xl shadow-md overflow-hidden"
+                  className="bg-white  hover:shadow-lg transition  rounded-xl shadow-md overflow-hidden"
                 >
                   <Image
                     src={card.img}
@@ -127,11 +127,11 @@ const WhyChooseUs = () => {
                     height={400}
                     className="w-full h-[200px] object-cover"
                   />
-                  <div className="~p-[0.875rem]/[1.5rem]">
-                    <h3 className="~text-h3/h4 font-semibold text-[#0B2A67] mb-2">
+                  <div className="~py-[1rem]/[2rem] ~px-[1rem]/[1.5rem]">
+                    <h3 className="~text-h3/h4 font-serif font-semibold text-[#0B2A67] mb-2">
                       {card.title}
                     </h3>
-                    <p className="~text-h8/h3 text-gray-700">
+                    <p className="~text-h8/h3 font-serif text-gray-700">
                       {card.description}
                     </p>
                   </div>

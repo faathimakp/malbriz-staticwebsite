@@ -57,7 +57,7 @@ const Header = () => {
             <div key={index} className="relative group">
               <Link
                 href={item.path}
-                className={`text-h3  transition ${
+                className={`text-h3  font-serif transition ${
                   isActive
                     ? "text-[#37474F] font-bold"
                     : "text-[#37474F] hover:text-black"
@@ -66,14 +66,14 @@ const Header = () => {
                 {item.name}
               </Link>
               {isActive && (
-                <div className="absolute bottom-[-6px] left-1/2 transform -translate-x-1/2 h-[2px] w-full bg-[#0CBA4C] rounded-md" />
+                <div className="absolute bottom-[-6px] left-1/2 transform -translate-x-1/2 h-[2px] w-full bg-[#fca312] rounded-md" />
               )}
             </div>
           );
         })}
         <div>
-          <Link href="/contact/#getintouch" className="bg-[#fca312] hover:bg-[#d5942d] text-black font-semibold text-h3 rounded-[1rem] px-[1.5rem] py-[0.5rem] shadow-md transition">
-            Get In Touch
+          <Link href="/contact/#getintouch" className="bg-[#d5942d] font-serif text-black font-semibold text-h3 rounded-[1rem] px-[1.5rem] py-[0.5rem] shadow-md transition">
+            GET IN TOUCH
           </Link>
         </div>
       </nav>

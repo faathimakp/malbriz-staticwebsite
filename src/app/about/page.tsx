@@ -1,27 +1,30 @@
 import Image from "next/image";
 import React from "react";
-import AboutBg from "@public/images/about.jpg";
+import AboutBg from "@public/images/aboutbg.jpg";
 import Pic1 from "@public/images/aboutbg.jpeg";
 import Pic2 from "@public/images/about1.jpg";
 import WordStaggerAnimation from "../components/animations/WordStaggerAnimation";
 import CardAnimation from "../components/animations/CardAnimation";
 
 const page = () => {
+    
   return (
+    
     <div className="">
-      <div className="w-full h-[55dvh] md:h-[70dvh] relative flex justify-center items-center">
+      <div className="w-full h-[55dvh] md:h-[70dvh] relative flex justify-center">
         <Image src={AboutBg} alt="" className="h-full w-full object-cover" />
-        <WordStaggerAnimation
-          text="ABOUT US"
-          className="absolute  text-white font-bold ~text-[1.375rem]/[3.5rem] font-poppins ~leading-[1.5rem]/[3.5rem]"
-        ></WordStaggerAnimation>
-      </div>
+      <div className="absolute items-center  inset-0 flex justify-center font-serif font-bold ~text-[1.375rem]/[3.5rem] ~leading-[1.5rem]/[3.5rem]">
+  <WordStaggerAnimation text="ABOUT" className="text-[#d5942d] mr-1" />
+  <WordStaggerAnimation text="US" className="text-[#14213d]" />
+</div>
+
+      </div> 
       <div className="~py-[2rem]/[5rem] ~px-[1.5rem]/[10rem]">
         <WordStaggerAnimation
           text="Who We Are"
-          className="~text-h13/h10 font-bold text-[#0B2A67]   font-poppins  ~pb-[1rem]/[2rem] "
+          className="~text-h13/h10 font-bold text-[#0B2A67]   font-serif  ~pb-[1rem]/[2rem] "
         ></WordStaggerAnimation>
-        <div className="~text-h5/h4 font-poppins flex flex-col ~gap-[0.5rem]/[1rem] ~pb-[1rem]/[2rem]">
+        <div className="~text-h5/h4 font-serif flex flex-col ~gap-[0.5rem]/[1rem] ~pb-[1rem]/[2rem]">
           <p>
             Malbriz Ventures offers a wide range of daily essentials including
             premium grains, varieties of rice, quality flours, pulses, lentils,

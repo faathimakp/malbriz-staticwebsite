@@ -9,10 +9,10 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className=" bg-[#14213d]  " id="contact">
-      <div className="relative z-10 ~px-[1.5rem]/[4.5rem] ~pt-[2rem]/[4.5rem] ~pb-[1rem]/[4.625rem]">
+      <div className="relative z-10 ~px-[1.5rem]/[4.5rem] ~pt-[2rem]/[3.5rem] ~pb-[1rem]/[3rem]">
         <div className="flex flex-col items-center md:items-end">
           <div className="md:flex-row flex flex-col-reverse md:justify-between mb-[2rem] w-full">
-            <p className="text-white  ~text-h3/h2 ~leading-[1.5rem]/[2.5rem]">
+            <p className="text-white font-serif  ~text-h3/h2 ~leading-[1.5rem]/[2.5rem]">
               +35699936017 <br />
               feedback@malbriz.com
             </p>
@@ -21,15 +21,15 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-between md:justify-center ~gap-x-[0.5rem]/[2.5rem] text-[1rem] text-[#FAFAFA] ~leading-[2rem]/[3rem] font-medium uppercase mb-[1rem] border-b border-[#FAFAFA]/30 ~pb-[0.75rem]/[1.5rem] w-full md:w-fit">
-            <a href={"/"} className="hover:text-[#0CBA4C]">
+          <div className="flex font-serif flex-wrap justify-between md:justify-center ~gap-x-[0.5rem]/[2.5rem] text-[1rem] text-[#FAFAFA] ~leading-[2rem]/[3rem] font-medium uppercase mb-[1rem] border-b border-[#FAFAFA]/30 ~pb-[0.75rem]/[1.5rem] w-full md:w-fit">
+            <a href={"/"} className="hover:text-[#fca312]">
               Home
             </a>
-            <a href={"/about"} className="hover:text-[#0CBA4C]">
+            <a href={"/about"} className="hover:text-[#fca312]">
               About
             </a>
 
-            <a href={"/contact"} className="hover:text-[#0CBA4C]">
+            <a href={"/contact"} className="hover:text-[#fca312]">
               Contact
             </a>
           </div>
@@ -39,24 +39,24 @@ const Footer = () => {
               <Image
                 src={Facebook}
                 alt="Facebook"
-                className="size-[1.125rem]"
+                className="~size-[1.15rem]/[1.5rem]"
               />
             </Link>
             <Link href="https://www.instagram.com/malbrizventuresltd/?igsh=MTd5OGh3aWJnY2ZyYg%3D%3D#">
               <Image
                 src={Instagram}
                 alt="Instagram"
-                className="size-[1.125rem]"
+                className="~size-[1.15rem]/[1.5rem]"
               />
             </Link>
             <Link href="https://wa.me/+35699936017">
-              <Image src={Whatsapp} alt="Twitter" className="size-[1.125rem]" />
+              <Image src={Whatsapp} alt="Twitter" className="~size-[1.15rem]/[1.5rem]" />
             </Link>
           </div>
         </div>
       </div>
       <div className="pb-[2rem] ~px-[1.5rem]/[4.5rem] ">
-        <h2 className="text-center font-poppins ~text-h5/h4 leading-[1.3rem] text-white md:text-desktop-body">
+        <h2 className="text-center font-poppins ~text-h5/h3 leading-[1.3rem] text-white md:text-desktop-body">
           © 2025 Malbriz Ventures. | Crafted by{" "}
           <Link className="font-semibold" target="_blank" href={""}>
             Malbriz Infotech

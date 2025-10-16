@@ -46,19 +46,19 @@ function Products() {
   }, []);
 
   return (
-    <div className="~px-[1rem]/[6.875rem] ~py-[1.5rem]/[3.5rem]  bg-[#FFEDE2] ">
+    <div className="~px-[1.5rem]/[6.875rem] ~py-[3rem]/[5rem]  bg-[#FFEDE2] ">
       <div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="~text-h2/h7 font-bold text-[#0B2A67] leading-[1.4rem]  ~pb-[1.25rem]/[3rem]  text-start lg:shrink-0 "
+          className="~text-h2/h7  font-serif font-bold text-[#0B2A67] leading-[1.4rem]  ~pb-[1.25rem]/[3rem]  text-start lg:shrink-0 "
         >
           Malbriz Essentials
         </motion.h1>
 
-        <div className="lg:flex-row flex flex-col ~gap-[1.5rem]/[0.5625rem] border-b border-[#0B2A67] pt-[1.5rem] ~pb-[2.5rem]/[4rem]">
+        <div className="lg:flex-row flex flex-col ~gap-[1.5rem]/[0.5625rem]  pt-[1.5rem] ~pb-[2.5rem]/[4rem]">
           {Category.map((item, i) => {
             const isSelected = isMdUp ? selectedIndex === i : true;
 
@@ -94,8 +94,8 @@ function Products() {
                     <p
                       className={`${
                         isSelected
-                          ? " ~text-h2/h7 font-bold text-white ~leading-[1.4381rem]/[2.25rem] ~pb-[0.5356rem]/[1.375rem]"
-                          : "font-semibold text-h2 min-h-[72px] flex items-center"
+                          ? " ~text-h4/h7 font-serif font-bold text-white ~leading-[1.4381rem]/[2.25rem] ~pb-[0.5356rem]/[1.375rem]"
+                          : "font-semibold text-h2 min-h-[72px] flex items-center font-serif"
                       }`}
                     >
                       {item.name}

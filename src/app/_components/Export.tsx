@@ -44,10 +44,10 @@ const Export = () => {
     <>
       <div className="~px-[1.5rem]/[6rem] ~pt-[2rem]/[2rem]">
         <div className="text-start mb-12 ">
-          <h2 className="~text-h2/h7 ~leading-[1.75rem]/[2.5rem] font-bold text-[#0B2A67] mb-4">
+          <h2 className="~text-h2/h7 font-serif ~leading-[1.75rem]/[2.5rem] font-bold text-[#0B2A67] mb-4">
             Expanding Beyond Borders
           </h2>
-          <p className="~text-h3/h4 leading-[1.45rem] md:text-lg text-gray-700 max-w-2xl ">
+          <p className="~text-h3/h4  font-serif leading-[1.45rem]  text-gray-700 max-w-2xl ">
             Malbriz Ventures leads international trade with a strong network of
             import and export operations — ensuring fresh, authentic products
             reach every corner of the globe.
@@ -68,7 +68,7 @@ const Export = () => {
                     />
                   </div>
                 </div>
-                <p className="font-mono">{item.name}</p>
+                <p className="font-serif">{item.name}</p>
            </div >
           ))}
         </div>

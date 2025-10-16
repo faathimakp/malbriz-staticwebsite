@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Variants, motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Logo from "@public/images/banner.webp";
+import Logo from "@public/images/herobg.jpg";
 
 function Hero() {
   const titles = [
@@ -64,21 +64,21 @@ function Hero() {
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
-              className="text-white font-bold ~text-[1.375rem]/[3.5rem] text-center lg:px-[18.563rem] px-[1rem] font-montserrat ~leading-[1.5rem]/[3.5rem]"
+              className="text-[#14213d] font-bold font-serif ~text-[1.375rem]/[2.75rem] text-center lg:px-[18.563rem] px-[1rem] font-montserrat ~leading-[1.5rem]/[3rem]"
               variants={sentenceVariant}
               initial="hidden"
               animate="visible"
               exit="exit"
             >
               {words.map((word, index) => (
-                <motion.span
-                  key={index}
-                  variants={wordVariant}
-                  className="inline-block mr-[0.25em]"
-                >
-                  {word}
-                </motion.span>
-              ))}
+  <motion.span
+    key={index}
+    variants={wordVariant}
+    className={`inline-block mr-[0.25em] ${index === 0 ? 'text-[#d5942d]' : ''}`}
+  >
+    {word}
+  </motion.span>
+))}
             </motion.div>
           </AnimatePresence>
         </div>
