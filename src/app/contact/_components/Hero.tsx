@@ -69,7 +69,7 @@ const Hero = () => {
     <section className="bg-white ">
       <div className="w-full h-[55dvh] md:h-[70dvh] relative flex justify-center items-center">
         <Image src={AboutBg} alt="" className="h-full w-full object-cover" />
-        <div className="absolute items-center  inset-0 flex justify-center font-serif font-bold ~text-[1.375rem]/[3.5rem] ~leading-[1.5rem]/[3.5rem]">
+        <div className="absolute items-center  inset-0 flex justify-center font-serif font-bold ~text-[1.375rem]/[2.75rem] ~leading-[1.5rem]/[3rem]">
   <WordStaggerAnimation text="CONTACT" className="text-[#d5942d] mr-1" />
   <WordStaggerAnimation text="US" className="text-[#14213d]" />
 </div>
