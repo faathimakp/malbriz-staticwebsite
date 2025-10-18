@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Variants, motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Logo from "@public/images/herobg.jpg";
+import Logo from "@public/images/homehero1.jpg";
 
 function Hero() {
   const titles = [
@@ -53,32 +53,35 @@ function Hero() {
   return (
     <div className="relative  h-[55dvh] md:h-[80dvh] flex justify-center  ">
       <div className=" w-full relative  ">
-        
-        <Image
-          src={Logo}
-          alt="Malbriz Logo"
-          className="size-full object-cover"
-        />
-
+        <div className="relative w-full h-full">
+          <Image
+            src={Logo}
+            alt="Malbriz Logo"
+            className="size-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+        </div>
         <div className="absolute  inset-0 flex flex-col items-center justify-center w-full ~gap-[1.505rem]/[2.688rem] z-20">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
-              className="text-[#14213d] font-bold font-serif ~text-[1.375rem]/[2.75rem] text-center lg:px-[18.563rem] px-[1rem] font-montserrat ~leading-[1.5rem]/[3rem]"
+              className="text-white font-bold font-serif ~text-[1.375rem]/[2.75rem] text-center lg:px-[18.563rem] px-[1rem] font-montserrat ~leading-[1.5rem]/[3rem]"
               variants={sentenceVariant}
               initial="hidden"
               animate="visible"
               exit="exit"
             >
               {words.map((word, index) => (
-  <motion.span
-    key={index}
-    variants={wordVariant}
-    className={`inline-block mr-[0.25em] ${index === 0 ? 'text-[#d5942d]' : ''}`}
-  >
-    {word}
-  </motion.span>
-))}
+                <motion.span
+                  key={index}
+                  variants={wordVariant}
+                  className={`inline-block mr-[0.25em] ${
+                    index === 0 ? "text-white" : ""
+                  }`}
+                >
+                  {word}
+                </motion.span>
+              ))}
             </motion.div>
           </AnimatePresence>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import AboutBg from "@public/images/herobg.jpg";
+import ContactBg from "@public/images/homehero.jpg";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -68,10 +68,16 @@ const Hero = () => {
   return (
     <section className="bg-white ">
       <div className="w-full h-[55dvh] md:h-[70dvh] relative flex justify-center items-center">
-        <Image src={AboutBg} alt="" className="h-full w-full object-cover" />
+        <div className="relative w-full h-full">
+          <Image
+            src={ContactBg}
+            alt="Malbriz Logo"
+            className="size-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+        </div>
         <div className="absolute items-center  inset-0 flex justify-center font-serif font-bold ~text-[1.375rem]/[2.75rem] ~leading-[1.5rem]/[3rem]">
-  <WordStaggerAnimation text="CONTACT" className="text-[#d5942d] mr-1" />
-  <WordStaggerAnimation text="US" className="text-[#14213d]" />
+  <WordStaggerAnimation text="CONTACT US" className="text-white " />
 </div>
       </div>
       <div className="max-w-3xl mx-auto ~py-[3rem]/[5rem] px-4" id="getintouch">

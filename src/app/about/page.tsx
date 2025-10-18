@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import AboutBg from "@public/images/aboutbg.jpg";
+import AboutBg from "@public/images/herobg.jpg";
 import Pic1 from "@public/images/aboutbg.jpeg";
 import Pic2 from "@public/images/about1.jpg";
 import WordStaggerAnimation from "../components/animations/WordStaggerAnimation";
@@ -12,10 +12,17 @@ const page = () => {
     
     <div className="">
       <div className="w-full h-[55dvh] md:h-[70dvh] relative flex justify-center">
-        <Image src={AboutBg} alt="" className="h-full w-full object-cover" />
+      <div className="relative w-full h-full">
+          <Image
+            src={AboutBg}
+            alt="Malbriz Logo"
+            className="size-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+        </div>
       <div className="absolute items-center  inset-0 flex justify-center font-serif font-bold ~text-[1.375rem]/[2.75rem] ~leading-[1.5rem]/[3rem]">
-  <WordStaggerAnimation text="ABOUT" className="text-[#d5942d] mr-1" />
-  <WordStaggerAnimation text="US" className="text-[#14213d]" />
+  <WordStaggerAnimation text="ABOUT US" className="text-white" />
+  <WordStaggerAnimation text="" className="text-[#14213d]" />
 </div>
 
       </div> 
