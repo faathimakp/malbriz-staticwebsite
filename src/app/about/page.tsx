@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import AboutBg from "@public/images/herobg.jpg";
+import AboutBg from "@public/images/aboutbg.jpg";
 import Pic1 from "@public/images/aboutcard1.jpg";
 import Pic2 from "@public/images/aboutcard2.jpg";
 import WordStaggerAnimation from "../components/animations/WordStaggerAnimation";
@@ -66,10 +66,10 @@ const page = () => {
         </div>
         <div className="grid md:grid-cols-2 ~gap-[1rem]/[2rem] ~py-[1rem]/[2rem]">
           <CardAnimation delay={0.1} index={0}>
-            <Image src={Pic1} alt="" className="rounded-2xl " />
+            <Image src={Pic1} alt="" className="rounded-2xl w-full ~h-[11.3125rem]/[22.5rem] object-cover" />
           </CardAnimation>
           <CardAnimation delay={0.1} index={0}>
-            <Image src={Pic2} alt="" className="rounded-2xl " />
+            <Image src={Pic2} alt="" className="rounded-2xl w-full ~h-[11.3125rem]/[22.5rem] object-cover" />
           </CardAnimation>
         </div>
       </div>
