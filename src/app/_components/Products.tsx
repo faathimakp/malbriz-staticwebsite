@@ -46,7 +46,7 @@ function Products() {
   }, []);
 
   return (
-    <div className="~px-[1.5rem]/[6.875rem] ~py-[3rem]/[5rem]  bg-[#FFEDE2] ">
+    <div className="~px-[1.5rem]/[6.875rem] ~py-[3rem]/[5rem]  bg-[#efd09f] ">
       <div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
