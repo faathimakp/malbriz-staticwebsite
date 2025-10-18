@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import AboutBg from "@public/images/herobg.jpg";
-import Pic1 from "@public/images/aboutbg.jpeg";
-import Pic2 from "@public/images/about1.jpg";
+import Pic1 from "@public/images/aboutcard1.jpg";
+import Pic2 from "@public/images/aboutcard2.jpg";
 import WordStaggerAnimation from "../components/animations/WordStaggerAnimation";
 import CardAnimation from "../components/animations/CardAnimation";
 

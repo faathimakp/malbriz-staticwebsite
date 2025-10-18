@@ -54,7 +54,8 @@ const Hero = () => {
         `Message:\n${data.message}`
     );
 
-    const mailtoLink = `mailto:mishkathbk@gmail.com?subject=${subject}&body=${body}`;
+   const mailtoLink = `mailto:feedback@malbriz.com,Info@malbrizventuresltd.com?subject=${subject}&body=${body}`;
+
 
     window.location.href = mailtoLink;
 

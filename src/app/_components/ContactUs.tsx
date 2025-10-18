@@ -6,7 +6,7 @@ import Logo from "@public/images/Malbriz Logo File/Malbriz Ventures Logo-black.p
 
 const ContactUs = () => {
   return (
-      <div className=" bg-[#d5942d] ~py-[2rem]/[2.5rem] ~px-[1.5rem]/[6rem]">
+      <div className=" bg-[#f4b044] ~py-[2rem]/[2.5rem] ~px-[1.5rem]/[6rem]">
         <div className="  text-start relative z-10">
           <div className="flex ~gap-[2rem]/[0rem] md:justify-between md:items-center items-start flex-col md:flex-row">
             <div>

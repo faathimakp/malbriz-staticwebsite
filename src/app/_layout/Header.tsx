@@ -10,10 +10,8 @@ import MenuRes from "../components/MenuRes";
 
 const navItems = [
   { name: "HOME", path: "/" },
-
   { name: "ABOUT", path: "/about" },
   { name: "CONTACT", path: "/contact" },
- 
 ];
 
 const Header = () => {
@@ -71,11 +69,13 @@ const Header = () => {
             </div>
           );
         })}
-        <div>
-          <Link href="/contact/#getintouch" className="bg-[#d5942d] font-serif text-black font-semibold text-h3 rounded-[1rem] px-[1.5rem] py-[0.5rem] shadow-md transition">
-            GET IN TOUCH
-          </Link>
-        </div>
+
+        <Link
+          href="/contact/#getintouch"
+          className="bg-[#fca312] font-serif text-black font-semibold text-sm rounded-md px-6 py-2 shadow-md transition"
+        >
+          GET IN TOUCH
+        </Link>
       </nav>
     </header>
   );

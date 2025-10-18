@@ -1,6 +1,4 @@
 import React from "react";
-// import BgImage from "@public/images/bgcream.webp";
-// import Image from "next/image";
 import WordStaggerAnimation from "../components/animations/WordStaggerAnimation";
 import TextStaggerAnimation from "../components/animations/TextStaggerAnimation";
 import Link from "next/link";
